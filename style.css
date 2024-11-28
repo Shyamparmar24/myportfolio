@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 1s ease;
+    scroll-behavior: smooth;
+}
+:root{ 
+    --color1:rgb(11,255,255);
+}
+header{
+    display: flex;
+    background-color: rgba(229, 13, 204, 0.8);
+    color: white;
+    padding: 20px 50px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+#java{
+    border: 2px solid red;
+    height: 60px;
+    width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: beige;
+}
+#obj{
+    border: 2px solid red;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(209, 255, 245);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 48px;
+}
+.logo img{
+  height: 70px;
+  border-radius:50%;
+}
+.name span{
+    color: var(--color1);
+}
+.menu{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.navigation{
+    display: flex;
+    gap: 10px;
+}
+.navigation a{
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+button{
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.navigation a:hover{
+ color: var(--color1);
+}
+button:hover{
+    background-color: var(--color1);
+}
+.heading{
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 2px 2px 3px var(--color1);
+    /* background: linear-gradient(to right,var(--color1),blue); */
+}
+section{
+    padding: 50px 100px;
+
+}
+#banner{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.bannerleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.bannerleft h2{
+    font-size: 32px;
+}
+.bannerleft h2>span{
+
+}
+.bannerleft p{
+    font-size: 24px;
+}
+.buttons:nth-child(1){
+    background-color: var(--color1);
+    color: white;
+}
+.buttons:nth-child(2){
+    background-color: transparent;
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#about{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#about p{
+    font-size: 24px;
+    text-align: justify;
+    border: 2px solid red;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+.aboutPic{
+    height: 400px;
+    clip-path: circle(200px);
+    /* filter: invert(); */
+    
+}
+.aboutPic:hover{
+    filter: none;
+}
+.bannerright img{
+    height: 400px;
+    width: 300px;
+    border-radius: 40px;
+}
+#skills{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+#skills img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+}
+#project{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.project{
+    border: 1px solid black;
+    box-shadow: 2px 3px 2px black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
+}
+.project img{
+    height: 100px;
+}
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 3px 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+input{
+    height: 30px;
+    width: 300px;
+    
+}
+textarea{
+    height: 50px;
+    resize: none;
+    width: 300px;
+
+}
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: red;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+
+
+/*media quaries*/
+@media (max-width:570px){
+header{
+    flex-direction: column;
+}
+#project{
+    grid-template-columns: repeat(1,1fr);
+}
+.menu{
+    flex-direction: column;
+}
+#banner{
+    flex-direction: column;
+}
+.navigation{
+    flex-direction: column;
+}
+section{
+    padding: 10px;
+}
+#about{
+    flex-direction: column;
+}
+#skills{
+    grid-template-columns: repeat(2,1fr);
+}
+}
+
+@media (min-width:571px) and (max-width:776px){
+header{
+    flex-direction: column;
+}
+#project{
+    grid-template-columns: repeat(2,1fr);
+}
+.menu{
+    flex-direction: column;
+}
+#banner{
+    flex-direction: column;
+}
+section{
+    padding: 30px 50px;
+}
+.bannerright img{
+    width: 300px;
+    height: 400px;
+}
+#about{
+    flex-direction: column;
+}
+#skills{
+    grid-template-columns: repeat(3,1fr);
+}
+}
+@media (min-width:848px) and (max-width:1080px){
+
+}
